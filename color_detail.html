@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Dégradation de Couleur - Decoding Autism Mind</title>
+    <link
+      rel="icon"
+      href="https://webstockreview.net/images/autism-clipart-autism-brain-12.jpg"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="color_detail.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      function showFullScreen(color) {
+        document.body.style.backgroundColor = color;
+        document.getElementById("color-name").innerText = color;
+      }
+
+      function getParameterByName(name) {
+        const url = new URL(window.location.href);
+        return url.searchParams.get(name);
+      }
+
+      function addToVRInfo() {
+        const checkboxes = document.querySelectorAll('input[name="color"]:checked');
+        let selectedColors = [];
+        checkboxes.forEach((checkbox) => {
+          selectedColors.push(checkbox.value);
+        });
+        alert("Selected colors added to VR building info: " + selectedColors.join(", "));
+        // Here you can add logic to save these colors to your VR building info
+      }
+
+      function switchColor(color) {
+        document.body.style.backgroundColor = color;
+        document.getElementById("color-name").innerText = color;
+      }
+    </script>
+  </head>
+  <body onload="showFullScreen(getParameterByName('color'))">
+    <header>
+      <div class="header-container">
+        <div class="left-container">
+          <h2>Decoding Autism Mind</h2>
+          <img src="R.png" alt="logo" />
+        </div>
+        <nav class="nav-buttons">
+          <button onclick="location.href='home.html'">Accueil</button>
+          <button>Notre Centre</button>
+          <button onclick="location.href='presentation.html'">Présentation</button>
+          <button>FAQ</button>
+          <button>Contact</button>
+        </nav>
+      </div>
+    </header>
+
+    <section>
+      <h1 id="color-name">Dégradations de Couleur</h1>
+      <div class="color-degradations">
+        <!-- Add more links to individual color degradations -->
+        <div class="color-box" style="background-color: #ffcccc;" onclick="switchColor('#ffcccc')">#ffcccc <input type="checkbox" name="color" value="#ffcccc"></div>
+        <div class="color-box" style="background-color: #ff9999;" onclick="switchColor('#ff9999')">#ff9999 <input type="checkbox" name="color" value="#ff9999"></div>
+        <div class="color-box" style="background-color: #ff6666;" onclick="switchColor('#ff6666')">#ff6666 <input type="checkbox" name="color" value="#ff6666"></div>
+        <div class="color-box" style="background-color: #ff3333;" onclick="switchColor('#ff3333')">#ff3333 <input type="checkbox" name="color" value="#ff3333"></div>
+        <div class="color-box" style="background-color: #ff0000;" onclick="switchColor('#ff0000')">#ff0000 <input type="checkbox" name="color" value="#ff0000"></div>
+        <div class="color-box" style="background-color: #cc0000;" onclick="switchColor('#cc0000')">#cc0000 <input type="checkbox" name="color" value="#cc0000"></div>
+        <div class="color-box" style="background-color: #990000;" onclick="switchColor('#990000')">#990000 <input type="checkbox" name="color" value="#990000"></div>
+        <div class="color-box" style="background-color: #660000;" onclick="switchColor('#660000')">#660000 <input type="checkbox" name="color" value="#660000"></div>
+        <div class="color-box" style="background-color: #330000;" onclick="switchColor('#330000')">#330000 <input type="checkbox" name="color" value="#330000"></div>
+      </div>
+      <button onclick="addToVRInfo()">Ajouter à l'info VR</button>
+    </section>
+  </body>
+</html>

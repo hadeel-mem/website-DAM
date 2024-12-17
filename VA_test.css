@@ -1,0 +1,166 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+}
+p {
+  line-height: 1.6;
+  font-size: 18px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: black;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #3ebcc0;
+  color: white;
+  padding: 40px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0px 0px 50px 50px;
+  height: max-content;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 90%;
+  padding: 0 50px;
+}
+
+.left-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.left-container img {
+  width: 80px;
+}
+
+.left-container h2 {
+  font-size: 35px;
+  margin-right: 1px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.nav-buttons button {
+  background-color: #53d3fa;
+  color: #e2e2e2;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 1s;
+  box-shadow: 0px 0px 20px rgb(70, 121, 168);
+}
+
+.nav-buttons button:hover {
+  background-color: #136983;
+  color: white;
+}
+
+/* Section Styles */
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 100px 20px 20px;
+  margin-top: 120px; /* Gap between header and section */
+}
+
+.test-buttons {
+  margin-top: 20px;
+}
+
+.test-buttons button {
+  background-color: #53d3fa;
+  color: #e2e2e2;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+  box-shadow: 0px 0px 20px rgb(70, 121, 168);
+  margin: 0 10px;
+}
+
+.test-buttons button:hover {
+  background-color: #136983;
+  color: white;
+}
+
+footer {
+  padding: 20px 0;
+  background-color: #3ebcc0;
+}
+
+footer div {
+  font-size: 15px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  text-align: left;
+  color: rgb(252, 244, 244);
+}
+
+footer div a {
+  text-decoration: dashed;
+  color: white;
+}
+
+footer div a:hover {
+  color: #000000;
+}
+
+/* Additional CSS for images */
+img.rounded-zoom {
+  border-radius: 15px; /* Rounded corners */
+  transition: transform 0.3s ease-in-out; /* Smooth zoom animation */
+}
+
+img.rounded-zoom:hover {
+  transform: scale(1.1); /* Zoom in on hover */
+}
+
+/* Animation Keyframes */
+@keyframes boxFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes contentFadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

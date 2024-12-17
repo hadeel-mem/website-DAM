@@ -1,0 +1,139 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+  }
+  p {
+    line-height: 1.6;
+    font-size: 18px;
+  }
+  
+  body {
+    font-family: "Roboto", sans-serif;
+    color: black;
+  }
+  
+  header {
+    background-color: #3ebcc0;
+    color: white;
+    padding: 40px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0px 0px 50px 50px;
+    height: max-content;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 90%;
+    padding: 0 50px;
+  }
+  
+  .left-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .left-container img {
+    width: 80px;
+  }
+  
+  .left-container h2 {
+    font-size: 35px;
+    margin-right: 1px;
+    font-family: "Times New Roman", Times, serif;
+  }
+  
+  .nav-buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .nav-buttons button {
+    background-color: #53d3fa;
+    color: #e2e2e2;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 1s;
+    box-shadow: 0px 0px 20px rgb(70, 121, 168);
+  }
+  
+  .nav-buttons button:hover {
+    background-color: #136983;
+    color: white;
+  }
+  
+  /* Section Styles */
+  section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 100px 20px 20px;
+    margin-top: 120px; /* Gap between header and section */
+  }
+  
+  .color-degradations {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .color-box {
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+  }
+  
+  .color-box:hover {
+    transform: scale(1.1);
+  }
+  
+  .color-box input[type="checkbox"] {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    transform: scale(1.5);
+  }
+  
+  button {
+    background-color: #53d3fa;
+    color: #e2e2e2;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+    box-shadow: 0px 0px 20px rgb(70, 121, 168);
+    margin-top: 20px;
+  }
+  
+  button:hover {
+    background-color: #136983;
+    color: white;
+  }
+  
